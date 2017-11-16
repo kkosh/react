@@ -7,14 +7,13 @@ const Header = () => {
      <div className = "container-fluid">
 
       <div className= "navbar-header">
-        <a className="navbar-brand" href="#">AutoNation</a>
+        <IndexLink to = "/" className="navbar-brand" activeClassName="active">AutoNation</IndexLink>
       </div>
 
       <ul className="nav navbar-nav">
         <li><IndexLink to = "/" activeClassName="active"><strong> Home </strong></IndexLink></li>
         <li><Link to = "/about" activeClassName="active"><strong> About </strong></Link></li>
         <li><Link to = "/car" activeClassName="active"><strong> Car </strong></Link></li>
-        <li></li>
       </ul>
 
       <form className="navbar-form navbar-left">

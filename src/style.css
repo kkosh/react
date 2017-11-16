@@ -1,10 +1,22 @@
 .txtinput {
-    margin-top: 215px;
-    margin-left: 525px;
+    margin-top: 0px;
+    margin-left: 469px;
     width: 596px;
 }
 
 .txtBtn {
   margin-top: 0px;
   margin-left: 20px;
+}
+
+.navIcon {
+  position: relative;
+  left: 1487px;
+  top: 20px;
+}
+
+.carLabel {
+  margin-top: 167px;
+  margin-left: 469px;
+  color: #5cb85c;
 }

@@ -2,7 +2,6 @@ import React, {PropTypes} from 'react';
 import Header from '../Shared/Header';
 
 class App extends React.Component {
-
   render() {
     return (
       <div>
