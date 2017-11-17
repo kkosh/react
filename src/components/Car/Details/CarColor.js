@@ -14,7 +14,6 @@ class CarColor extends React.Component {
     return (
       <div>
         <div><h1><strong>hello from CarColor</strong></h1></div>
-      <div onClick={()=>document.write("kosha")}>Click</div>
       </div>
     );
   }
