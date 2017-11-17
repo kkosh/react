@@ -18,7 +18,7 @@ export default (
 		<Route path="car" component = {CarMain}>
       <IndexRoute component={CarPage}></IndexRoute>
       <Route path="carDetails" component={CarDetails}>
-        <IndexRoute component={CarColor}</IndexRoute>
+        <IndexRoute component={CarColor}></IndexRoute>
         <Route path="carMake" component={CarMake}></Route>
         <Route path="carHistory" component={CarHistory}></Route>
       </Route>
