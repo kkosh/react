@@ -11,16 +11,16 @@ const Modal = createReactClass({
     bottom: '20%',
     left: '20%',
     padding: 20,
-    boxShadow: '0px 0px 150px -21px rgba(0, 0, 0, 0.5)',
+    boxShadow: '#ccc 0px 0px 150px 370px',
     overflow: 'auto',
-    background: '#fff',
+    background: 'rgb(255, 255, 255)',
     opacity: '0.5 !important'
   },
 
   render() {
     return (
       <div style={this.styles}>
-        <p><Link to={this.props.returnTo}>Back</Link></p>
+        <p><Link to={this.props.returnTo}><i className="glyphicon glyphicon-remove"></i></Link></p>
         {this.props.children}
       </div>
     )
