@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import createReactClass from 'create-react-class'
 import {Link} from 'react-router';
+import SubHeader from './SubHeader';
 
 const Modal = createReactClass({
   styles: {

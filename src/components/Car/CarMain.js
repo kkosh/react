@@ -30,7 +30,6 @@ class  CarMain extends React.Component {
           this.previousChildren :
           this.props.children
         }
-
         {isModal && (
           <Modal isOpen={true} returnTo={location.state.returnTo}>
             {this.props.children}

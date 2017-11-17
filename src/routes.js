@@ -11,23 +11,14 @@ import CarColor from './components/Car/Details/CarColor';
 import CarMake from './components/Car/Details/CarMake';
 import CarHistory from './components/Car/Details/carHistory';
 
-
-const manageState = ({location}, replace) => {
-							const {pathname, state} = location;
-							if (!state || !state.modal) {
-								const modalState = Object.assign({}, state, {modal: true});
-								replace({pathname, state: modalState});
-							}
-						}
-
 export default (
   <Route path = "/" component = {App} >
     <IndexRoute component = {HomePage}></IndexRoute>
     <Route path="about" component = {AboutPage}></Route>
-    <Route path="car" component = {CarMain}>
+		<Route path="car" component = {CarMain}>
       <IndexRoute component={CarPage}></IndexRoute>
       <Route path="carDetails" component={CarDetails}>
-        <IndexRoute component={CarColor}></IndexRoute>
+        <IndexRoute component={CarColor}</IndexRoute>
         <Route path="carMake" component={CarMake}></Route>
         <Route path="carHistory" component={CarHistory}></Route>
       </Route>

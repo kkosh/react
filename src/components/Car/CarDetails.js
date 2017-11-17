@@ -1,5 +1,7 @@
 import React, {PropTypes} from 'react';
 import SubHeader from '../../Shared/SubHeader';
+import Modal from '../../Shared/Modal';
+
 
 class CarDetails extends React.Component {
 
@@ -27,20 +29,18 @@ class CarDetails extends React.Component {
 
     return (
       <div>
-        <SubHeader />
-
+      <div>
         {isModal ?
           this.previousChildren :
           this.props.children
         }
 
-        {isModal && (
-          <Modal isOpen={true} returnTo={location.state.returnTo}>
+          <Modal isOpen={true} returnTo="/car">
+            <SubHeader />
             {this.props.children}
           </Modal>
-        )}
-
       </div>
+    </div>
     );
   }
 }
