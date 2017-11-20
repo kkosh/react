@@ -11,7 +11,7 @@ const Modal = createReactClass({
     bottom: '20%',
     left: '20%',
     padding: 20,
-    boxShadow: '#ccc 0px 0px 150px 370px',
+//     boxShadow: '#ccc 0px 0px 150px 370px',
     overflow: 'auto',
     background: 'rgb(255, 255, 255)',
     opacity: '0.5 !important'
